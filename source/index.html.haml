@@ -1,0 +1,94 @@
+.left
+  .start
+    = image_tag 'hexa.png', class: 'logo', alt: 'Information Visualisation', width: '47px', height: '54px'
+    %h1.title Information Visualisation
+  %ol.groups
+    %li.group{'data-key': 0}
+      .group__number 1
+      %h4.group__name GROUP 1
+      %span.group__count
+    %li.group{'data-key': 1}
+      .group__number 2
+      %h4.group__name GROUP 2
+      %span.group__count
+    %li.group{'data-key': 2}
+      .group__number 3
+      %h4.group__name GROUP 3
+      %span.group__count
+    %li.group{'data-key': 3}
+      .group__number 4
+      %h4.group__name GROUP 4
+      %span.group__count
+    %li.group{'data-key': 4}
+      .group__number 5
+      %h4.group__name GROUP 5
+      %span.group__count
+    %li.group{'data-key': 5}
+      .group__number 6
+      %h4.group__name GROUP 6
+      %span.group__count
+    %li.group{'data-key': 6}
+      .group__number 7
+      %h4.group__name GROUP 7
+      %span.group__count
+    %li.group{'data-key': 7}
+      .group__number 8
+      %h4.group__name GROUP 8
+      %span.group__count
+    %li.group{'data-key': 8}
+      .group__number 9
+      %h4.group__name GROUP 9
+      %span.group__count
+    %li.group{'data-key': 9}
+      .group__number 10
+      %h4.group__name GROUP 10
+      %span.group__count
+
+.center
+  %h2.chart__title Overall Statistics
+  .charts-wrapper
+    .charts
+      %canvas#myChart{width: 500, height: 500}
+    .stats
+      -# .stat-block
+      -#   %h3 71 Registered Students
+      -# .stat-block
+      -#   %h3 Overall Score of
+      .stat-block.members-stats
+        %h3 Group members
+        .members-wrapper
+          .member
+          .member
+          .member
+          .member
+          .member
+          .member
+          .member
+          .member
+  %h2.table__title Registered Students
+  .table
+    %table.student-table.sortable-theme-bootstrap{'data-sortable': true}
+      %thead
+        %tr
+          %th{'data-sortable': true, 'data-sorted': false}
+            Group
+          %th{'data-sortable': true, 'data-sorted': false}
+            Alias
+          %th{'data-sortable': true, 'data-sorted': false}
+            Degree
+          %th{'data-sortable': true, 'data-sorted': false}
+            Major
+          %th{'data-sortable': true, 'data-sorted': false}
+            Total
+          %th{'data-sortable': true, 'data-sorted': false}
+            Tech
+          %th{'data-sortable': true, 'data-sorted': false}
+            iVis
+          %th{'data-sortable': true, 'data-sorted': false}
+            Maths
+          %th{'data-sortable': true, 'data-sorted': false}
+            Art
+          %th{'data-sortable': true, 'data-sorted': false}
+            UX
+          %th{'data-sortable': true, 'data-sorted': false}
+            Team

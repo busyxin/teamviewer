@@ -1,0 +1,37 @@
+!!!
+%html{:lang => I18n.locale}
+  %head
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => I18n.locale, :'http-equiv' => "content-language"}/
+    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0", :name => "viewport"}/
+    %meta{:name => "description", :content => "Information Visualisation Tool to Build Teams of Students"}/
+
+    %title
+      KTH - Information Visualisation | Team Builder
+
+    %link{:rel => "canonical", :href => ""}/
+
+    %meta{:content => "KTH - Information Visualisation | Team Builder", :itemprop => "name"}/
+    %meta{:content => "Information Visualisation Tool to Build Teams of Students", :itemprop => "description"}/
+
+    %meta{:content => "KTH - Information Visualisation | Team Builder", :property => "og:title"}/
+    %meta{:content => "website", :property => "og:type"}/
+    %meta{:content => "KTH - Information Visualisation | Team Builder", :property => "og:site_name"}/
+    %meta{:content => "Information Visualisation Tool to Build Teams of Students", :property => "og:description"}/
+    %meta{:content => "", :property => "og:url"}/
+    %meta{:content => "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Kth_logo.svg/1200px-Kth_logo.svg.png", :property => "og:image"}/
+    %meta{:content => "En", :property => "og:locale"}/
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"}
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"}
+
+    = stylesheet_link_tag :site
+    = stylesheet_link_tag :sortable
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat", :rel => "stylesheet"}/
+
+  %body
+    %main
+      = yield
+
+    = javascript_include_tag :main
+    = javascript_include_tag :sortable
